@@ -30,18 +30,7 @@ public class JqueryStartSetUp {
 				break;
 			}
 		}
-		
-		
-		
 	}
-	
-	public void handelDatePicker(){
-		
-		
-	}
-	
-	
-	
 	
 
 	/*public void selectFromSideBar(String sidebarSection, String interactionType) {

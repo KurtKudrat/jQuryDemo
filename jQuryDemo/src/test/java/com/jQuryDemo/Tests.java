@@ -482,8 +482,6 @@ public class Tests {
 		Actions act = new Actions(driver);
 		act.moveToElement(toolTip);
 		Thread.sleep(1000);
-		
-		
 
 		Thread.sleep(5000);
 		driver.close();

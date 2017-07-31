@@ -1,13 +1,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
+<suite name="Suite1" verbose="1">
 
-<test name="Nopackage">
-	<classes>
-		<class name="com.jQuryDemo.Tests" >
-			<methods>
-				<include name="tooltip" />
-			</methods>
-		</class>
-	</classes>
-</test>
+	<test name="jQuryTest">
+		<classes>
+			<class name="com.jQuryDemo.Tests">
+				<methods>
+					<include name="tooltip" />
+					<include name="Spinner" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
 	

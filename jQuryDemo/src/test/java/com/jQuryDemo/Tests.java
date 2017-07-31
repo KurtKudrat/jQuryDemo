@@ -16,7 +16,7 @@ public class Tests {
 	final static Logger logger = Logger.getLogger(Tests.class);
 	JqueryStartSetUp jQuery = new JqueryStartSetUp();
 
-	@Test(enabled = false)
+	@Test
 	public void draggableTest() throws Exception {
 		driver = jQuery.setDriver();
 		logger.info("Opening page selecting the sidebar section Draggable........");
@@ -35,7 +35,7 @@ public class Tests {
 		driver.quit();
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void droppable() throws InterruptedException {
 		driver = jQuery.setDriver();
 		jQuery.selectFromSidebar("Droppable");
@@ -55,7 +55,7 @@ public class Tests {
 	}
 
 	// not working
-	@Test(enabled = false)
+	@Test
 	public void resizable() throws Exception {
 		driver = jQuery.setDriver();
 		jQuery.selectFromSidebar("Resizable");
@@ -77,7 +77,7 @@ public class Tests {
 		driver.quit();
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void selectable() throws Exception {
 		driver = jQuery.setDriver();
 		jQuery.selectFromSidebar("Selectable");
@@ -99,7 +99,7 @@ public class Tests {
 	}
 
 	// not working
-	@Test(enabled = false)
+	@Test
 	public void sortable() throws Exception {
 		driver = jQuery.setDriver();
 		jQuery.selectFromSidebar("Sortable");
@@ -121,7 +121,7 @@ public class Tests {
 		driver.quit();
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void accordion() throws Exception {
 		driver = jQuery.setDriver();
 		jQuery.selectFromSidebar("Accordion");
@@ -143,7 +143,7 @@ public class Tests {
 		driver.quit();
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void autocomplete() throws Exception {
 		driver = jQuery.setDriver();
 		jQuery.selectFromSidebar("Autocomplete");
@@ -164,7 +164,7 @@ public class Tests {
 		driver.quit();
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void button() throws Exception {
 		driver = jQuery.setDriver();
 		jQuery.selectFromSidebar("Button");
@@ -186,7 +186,7 @@ public class Tests {
 
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void checkboxradio() throws Exception {
 		driver = jQuery.setDriver();
 		jQuery.selectFromSidebar("Checkboxradio");
@@ -215,7 +215,7 @@ public class Tests {
 		driver.quit();
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void controlgroup() throws Exception {
 		driver = jQuery.setDriver();
 		jQuery.selectFromSidebar("Controlgroup");
@@ -273,7 +273,7 @@ public class Tests {
 		driver.quit();
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void datepicker() throws Exception {
 		driver = jQuery.setDriver();
 		jQuery.selectFromSidebar("Datepicker");
@@ -298,7 +298,7 @@ public class Tests {
 		}
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void dialog() throws Exception {
 		driver = jQuery.setDriver();
 		jQuery.selectFromSidebar("Dialog");
@@ -317,7 +317,7 @@ public class Tests {
 
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void menu() throws Exception {
 		driver = jQuery.setDriver();
 		jQuery.selectFromSidebar("Menu");
@@ -361,7 +361,7 @@ public class Tests {
 		driver.quit();
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void selectmenu() throws Exception {
 		driver = jQuery.setDriver();
 		jQuery.selectFromSidebar("Selectmenu");
@@ -399,7 +399,7 @@ public class Tests {
 
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void slider() throws Exception {
 		driver = jQuery.setDriver();
 		jQuery.selectFromSidebar("Slider");
@@ -418,7 +418,7 @@ public class Tests {
 
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void Spinner() throws Exception {
 		driver = jQuery.setDriver();
 		jQuery.selectFromSidebar("Spinner");
@@ -446,7 +446,7 @@ public class Tests {
 
 	}
 	
-	@Test(enabled = false)
+	@Test
 	public void tabs() throws Exception {
 		driver = jQuery.setDriver();
 		jQuery.selectFromSidebar("Tabs");
@@ -467,7 +467,7 @@ public class Tests {
 		driver.quit();	
 	}
 	
-	@Test(enabled = true)
+	@Test
 	public void tooltip() throws Exception {
 		driver = jQuery.setDriver();
 		jQuery.selectFromSidebar("Tooltip");

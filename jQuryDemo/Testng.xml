@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<test name="Nopackage">
+	<classes>
+		<class name="com.jQuryDemo.Tests" >
+			<methods>
+				<include name="tooltip" />
+			</methods>
+		</class>
+	</classes>
+</test>
+	

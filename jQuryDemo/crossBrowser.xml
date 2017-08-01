@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CrossBrowserTest"  parallel="tests">
+	<test name="verifyPageTitlefirefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.jQuryDemo.CrossBrowserTest">
+			</class>
+		</classes>
+	</test>
+	<test name="verifyPageTitlechrome">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.jQuryDemo.CrossBrowserTest">
+			</class>
+		</classes>
+	</test>
+	<test name="verifyPageTitlesafari">
+		<parameter name="browser" value="safari"></parameter>
+		<classes>
+			<class name="com.jQuryDemo.CrossBrowserTest">
+			</class>
+		</classes>
+	</test><!-- verifyPageTitle -->
+</suite> <!-- CrossBrowserTest -->

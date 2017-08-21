@@ -1,22 +1,41 @@
 package com.jQuryDemo;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class JqueryStartSetUp {
-	private static WebDriver driver;
+	private  WebDriver driver;
 
 	public WebDriver setDriver() {
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
-		driver = new ChromeDriver();
+		//driver = new ChromeDriver();
+		
+		
+		
+		DesiredCapabilities cap = DesiredCapabilities.chrome();
+		cap.setCapability("jenkins.label","redhat5 && amd64");
+		
+		try {
+			driver = new RemoteWebDriver
+					(new URL("http://ec2-34-201-210-172.compute-1.amazonaws.com:4444/wd/hub"), cap);
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		driver.manage().window().maximize();
 		driver.get("https://jqueryui.com/");
-		
 		return driver;
+		
+		
+		
 
 	}
 	

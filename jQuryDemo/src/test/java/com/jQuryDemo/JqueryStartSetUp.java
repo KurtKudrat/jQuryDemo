@@ -20,7 +20,7 @@ public class JqueryStartSetUp {
 		
 		
 		DesiredCapabilities cap = DesiredCapabilities.chrome();
-		cap.setCapability("jenkins.label","redhat5 && amd64");
+		//cap.setCapability("jenkins.label","redhat5 && amd64");
 		
 		try {
 			driver = new RemoteWebDriver

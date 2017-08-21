@@ -27,6 +27,7 @@ public class JqueryStartSetUp {
 			DesiredCapabilities cap = DesiredCapabilities.chrome();
 			cap.setBrowserName("chrome");
     		cap.setPlatform(Platform.ANY);
+    		cap.setVersion("");
 			driver = new RemoteWebDriver
 					(new URL("http://ec2-34-201-210-172.compute-1.amazonaws.com:4444/wd/hub"), cap);
 		} catch (MalformedURLException e) {

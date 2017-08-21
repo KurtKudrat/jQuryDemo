@@ -14,7 +14,7 @@ public class JqueryStartSetUp {
 	private  WebDriver driver;
 
 	public WebDriver setDriver() {
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
+		//System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
 		//driver = new ChromeDriver();
 		
 		

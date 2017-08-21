@@ -5,6 +5,7 @@ import java.net.URL;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -24,6 +25,8 @@ public class JqueryStartSetUp {
 		
 		try {
 			DesiredCapabilities cap = DesiredCapabilities.chrome();
+			cap.setBrowserName("chrome");
+    		cap.setPlatform(Platform.ANY);
 			driver = new RemoteWebDriver
 					(new URL("http://ec2-34-201-210-172.compute-1.amazonaws.com:4444/wd/hub"), cap);
 		} catch (MalformedURLException e) {
@@ -34,9 +37,6 @@ public class JqueryStartSetUp {
 		driver.manage().window().maximize();
 		driver.get("https://jqueryui.com/");
 		return driver;
-		
-		
-		
 
 	}
 	
